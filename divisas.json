@@ -1,0 +1,6 @@
+[
+  { "moneda": "Euro", "valor": 210 },
+  { "moneda": "Dolar", "valor": 180 },
+  { "moneda": "Real", "valor": 50 },
+  { "moneda": "Yuan", "valor": 120 }
+]

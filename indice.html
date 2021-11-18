@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>miProyectoMangiafico</title>
+  <!-- CSS custom -->
+  <link rel="stylesheet" href="/Assets/css/estilositioweb.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="alert" class="alert"></div>
+  <header class="header">
+    <div class="header">
+      <p><img class="header__logo" src="https://pbs.twimg.com/profile_images/1012385245914697729/DT_3yeDJ.jpg"
+          alt="logo" /></p>
+      <p>
+      <h1 id="titulo">Bienvenido a Banco Nación</h1>
+      <nav class="header__buttons">
+        <ul>
+          <li><a id="btnPlazo" href="#" onclick="plazoFijo();" role="button">
+              Calculadora de plazo fijo </a></li>
+          <br>
+          <li><a id="btnConversor" href="#" onclick="conversorDivisas();" role="button">Conversor de divisas</a></li>
+        </ul>
+      </nav>
+      </p>
+    </div>
+  </header>
+  <main>
+
+    <section id="formularioCompleto">
+      <div class="contenedor__todo">
+        <div class="caja__trasera">
+          <div class="caja__trasera-login">
+            <h3>¿Ya tienes una cuenta?</h3>
+            <p>Inicia sesión para entrar en la página</p>
+            <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+          </div>
+          <div class="caja__trasera-register">
+            <h3>¿Aún no tienes una cuenta?</h3>
+            <p>Regístrate para que puedas iniciar sesión</p>
+            <button id="btn__registrarse">Regístrarse</button>
+          </div>
+        </div>
+
+        <!--Formulario de Login y registro-->
+        <div class="contenedor__login-register">
+          <!--Login-->
+          <form action="" class="formulario__login">
+            <h2>Iniciar Sesión</h2>
+            <input id="correoLogin" type="email" placeholder="Correo Electronico" required>
+            <input id="passwordLogin" type="password" placeholder="Contraseña" required>
+            <button id="btnLogin">Entrar</button>
+          </form>
+
+          <!--Register-->
+          <form action="" class="formulario__register">
+            <h2>Regístrarse</h2>
+            <input id="nombreRegistro" type="text" placeholder="Nombre completo" required>
+            <input id="emailRegistro" type="email" placeholder="Correo Electronico" required>
+            <input id="passwordRegistro" type="password" placeholder="Contraseña" required>
+            <input id="passwordConfirm" type="password" placeholder="Confirme Contraseña" required>
+            <button id="btnRegistro">Regístrarse</button>
+          </form>
+
+        </div>
+        <div class="message">
+        </div>
+      </div>
+    </section>
+    <section id="inputsUsuario">
+      <div class="entry">
+      </div>
+    </section>
+
+  </main>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <!-- Mis scripts -->
+  <script src="divisas.json" type="text/javascript"></script>
+  <script src="/Assets/js/conversor.js"></script>
+  <script src="/Assets/js/eventos.js"></script>
+  <script src="/Assets/js/formulario.js"></script>
+  <script src="/Assets/js/plazoFijo.js"></script>
+</body>
+
+</html>
